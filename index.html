@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery food</title>
+  <!-- podklu4aem shrift iz google fonts copy "link"  -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" 
+  rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+ <div class="container">
+    <!-- Shapka site --> 
+  <header class="header">
+    <!-- Logotip -->
+    <!-- zavara4ivaem v ssylku - nagimaya na logo perebrasyvalo na home page -->
+    <a href="index.html"class="logo">
+      <img src="img/logo.svg" alt="Logo" class="logo">
+    </a>
+    <!-- Pole poiska -->
+    <input type="text" class="input input-address" placeholder="Delivery adress">
+    <!-- Knopki Join & Trash -->
+       <div class="buttons">
+          <!--  sozdaem button class="button primary"kopka sinego zveta,
+           zadaem stil dla Join iz design code i vsavlaem v #style.css --> 
+           <button class="button button-primary">
+           <!-- export kartinki c 4elove4kom(join) iz design v Delivery food , 
+           export ,svg,rename as user
+           img+tab 
+            prisvoim kartinke class="button-icon" 
+            i zadadim otstup v #style .button-icon -->
+           <img src="img/user.svg" alt="user"  class="button-icon" >
+           <!-- zavora4ivaem Join v span+tab i nazavom 
+            class="button-text" vnutri Join i pereydem v
+             #style .button-text{}-->
+        <span class="button-text">Join</span>
+         </button>
+      
+      <button class="button">
+        <!-- sozdaem img.button-icon()korzina +tab vastavim kartinku(shopping)
+           iz papki img  img/   -->
+        <img src="img/shopping-card.svg" alt="shopping-card" class="button-icon">
+        <!-- dabavim span.button-text+tab  i vstavlyaem Trash-->
+         <span class="button-text">Trash</span>
+        </button>
+ </div>
+ <!-- CONTAINER finish -->
+</header>
+
+
+<main class="main">
+  <div class="container">
+    <!-- yellow table 2 DEN'  -->
+<section class="promo">
+  <!-- h1.online-title+tab, esli poyavlyaetsa znak "?"
+    (perenos stroki(in Los Angeles) to pishem teg <br/>) -->
+  <h1 class="promo-title">Online food delivery service <br/>in Los-Angeles  </h1> 
+   <p class="promo-text">
+    Dishes from your favorite restaurant will be delivered by a courier in gloves, mask and antiseptic
+   </p>
+</section>
+<!-- RESTAURANTS       section.restaurants+tab -->
+<section class="restaurants">
+  <!-- .section-heading+tab -->
+  <div class="section-heading">  
+    <h2 class="section-title">Restaurants</h2>
+    <input type="text" class="input input-search" placeholder="Seacrh of dishes and restaurants">
+  </div>
+  <!-- BLOCK C PHOTO RESTAURANTS     .cards|c + tab eta konstrucciya sozdaet class s ego commentariyem   -->
+    <div class="cards">
+      <!-- <div </div> menyaem na <a> </a>   href="restaurants.html" class="card" 4toby otkryvat restaurants-->
+     <a href="restaurants.html" class="card">
+       <!-- ubiraem skruglenie v design sverho pod osyami y h    
+        W (delaem "0")dlya togo 4toby vyrezat bez scrugleniya , menyat kartinki a skrugleniya ostavalis-->
+      <img src="img/image.jpg" alt="image" class="card-image">
+      <div class="card-text">
+        <div class="card-heading">
+          <!-- zagolovok 3 urovnya "card title"   h3.card-title +tab-->
+          <h3 class="card-title">Pizza Plus</h3>    
+           <!-- span.card-tag.tag -->
+            <span class="card-tag tag">50min</span>
+        </div>
+        <!-- /.card-heading -->
+        <div class="card-info">
+          <!-- nohogu img star,DELAYA ETO <img src="img/rating.svg" alt="rating" class="rating-star"> 
+            nM NUGNO ZAMENIT VSE ZNA4ENIYA 4ETYRE S POLOVINOY NA TO 4TO SVERHU
+            YA VYDELAYU 4ETYRESPOLOVINOY + CMD+F, STRELKA VNIZ I PASTE + V KONCE POSLE "/>"" VSTAVIT 4ETYRE 
+            S POLOVINOY, SPRAVA NAGAT VTORUYU KNOPKU REPLACE ALL-->
+            
+          <div class="rating"><IMG SRC="IMG/RATING.SVG" ALT="RATING" CLASS="RATING-STAR" /><IMG SRC="IMG/RATING.SVG" ALT="RATING" CLASS="RATING-STAR" /> 4.5</div>
+          <div class="price">from 60$</div>
+          <div class="category">pizza</div>
+        </div>
+        <!-- /.card-info -->
+      </div>
+      <!-- /.card-text -->
+    </a>
+     <!-- /.card --> 
+     <!-- 2 KARTO4KA -->
+     <a href="restaurants.html" class="card">
+      <!-- ubiraem skruglenie v design sverho pod osyami y h    
+       W (delaem "0")dlya togo 4toby vyrezat bez scrugleniya , menyat kartinki a skrugleniya ostavalis-->
+     <img src="img/imageTanuki.jpg" alt="image" class="card-image">
+     <div class="card-text">
+       <div class="card-heading">
+         <!-- zagolovok 3 urovnya "card title"   h3.card-title +tab-->
+         <h3 class="card-title">Tanuki</h3>    
+          <!-- span.card-tag.tag -->
+           <span class="card-tag tag">23min</span>
+       </div>
+       <!-- /.card-heading -->
+       <div class="card-info">
+         <div class="rating"><IMG SRC="IMG/RATING.SVG" ALT="RATING" CLASS="RATING-STAR" /> 4.5</div>
+         <div class="price">from 90$</div>
+         <div class="category">pizza</div>
+       </div>
+       <!-- /.card-info -->
+     </div>
+     <!-- /.card-text -->
+    </a>
+    <!-- /.card --> 
+    <!-- 3 KARTO4KA -->
+    <a href="restaurants.html" class="card">
+      <!-- ubiraem skruglenie v design sverho pod osyami y h    
+       W (delaem "0")dlya togo 4toby vyrezat bez scrugleniya , menyat kartinki a skrugleniya ostavalis-->
+     <img src="img/imageFoodband.jpg" alt="image" class="card-image">
+     <div class="card-text">
+       <div class="card-heading">
+         <!-- zagolovok 3 urovnya "card title"   h3.card-title +tab-->
+         <h3 class="card-title">FoodBand</h3>    
+          <!-- span.card-tag.tag -->
+           <span class="card-tag tag">30min</span>
+       </div>
+       <!-- /.card-heading -->
+       <div class="card-info">
+         <div class="rating"><IMG SRC="IMG/RATING.SVG" ALT="RATING" CLASS="RATING-STAR" /> 4.5</div>
+         <div class="price">from 90$</div>
+         <div class="category">pizza</div>
+       </div>
+       <!-- /.card-info -->
+     </div>
+     <!-- /.card-text -->
+    </a>
+    <!-- /.card --> 
+    <!-- 4444 KARTO4KA -->
+    <a href="restaurants.html" class="card">
+      <!-- ubiraem skruglenie v design sverho pod osyami y h    
+       W (delaem "0")dlya togo 4toby vyrezat bez scrugleniya , menyat kartinki a skrugleniya ostavalis-->
+     <img src="img/imageGadina.jpg" alt="image" class="card-image">
+     <div class="card-text">
+       <div class="card-heading">
+         <!-- zagolovok 3 urovnya "card title"   h3.card-title +tab-->
+         <h3 class="card-title">Gadina-pizza</h3>    
+          <!-- span.card-tag.tag -->
+           <span class="card-tag tag">40min</span>
+       </div>
+       <!-- /.card-heading -->
+       <div class="card-info">
+         <div class="rating"><IMG SRC="IMG/RATING.SVG" ALT="RATING" CLASS="RATING-STAR" /> 4.5></div>
+         <div class="price">from 90$</div>
+         <div class="category">pizza</div>
+       </div>
+       <!-- /.card-info -->
+     </div>
+     <!-- /.card-text -->
+    </a>
+    <!-- /.card --> 
+    <!-- 5 KARTO4KA -->
+    <a href="restaurants.html" class="card">
+      <!-- ubiraem skruglenie v design sverho pod osyami y h    
+       W (delaem "0")dlya togo 4toby vyrezat bez scrugleniya , menyat kartinki a skrugleniya ostavalis-->
+     <img src="img/imageBase_of_food.jpg" alt="image" class="card-image">
+     <div class="card-text">
+       <div class="card-heading">
+         <!-- zagolovok 3 urovnya "card title"   h3.card-title +tab-->
+         <h3 class="card-title">Base of food</h3>    
+          <!-- span.card-tag.tag -->
+           <span class="card-tag tag">30min</span>
+       </div>
+       <!-- /.card-heading -->
+       <div class="card-info">
+         <div class="rating"><IMG SRC="IMG/RATING.SVG" ALT="RATING" CLASS="RATING-STAR" /> 4.5</div>
+         <div class="price">from 90$</div>
+         <div class="category">pizza</div>
+       </div>
+       <!-- /.card-info -->
+     </div>
+     <!-- /.card-text -->
+    </a>
+    <!-- /.card --> 
+    <!-- 6 KARTO4KA -->
+    <a href="restaurants.html" class="card">
+      <!-- ubiraem skruglenie v design sverho pod osyami y h    
+       W (delaem "0")dlya togo 4toby vyrezat bez scrugleniya , menyat kartinki a skrugleniya ostavalis-->
+     <img src="img/imagePizzaburger.jpg" alt="image" class="card-image">
+     <div class="card-text">
+       <div class="card-heading">
+         <!-- zagolovok 3 urovnya "card title"   h3.card-title +tab-->
+         <h3 class="card-title">PizzaBurger</h3>    
+          <!-- span.card-tag.tag -->
+           <span class="card-tag tag">50min</span>
+       </div>
+       <!-- /.card-heading -->
+       <div class="card-info">
+         <div class="rating"><IMG SRC="IMG/RATING.SVG" ALT="RATING" CLASS="RATING-STAR" /> 4.5</div>
+         <div class="price">from 90$</div>
+         <div class="category">pizza</div>
+       </div>
+       <!-- /.card-info -->
+     </div>
+     <!-- /.card-text -->
+    </div>
+    <!-- /.card --> 
+  </div>
+    <!-- /.cards -->
+
+</section>
+  </div>
+  <!-- /.container -->
+</main>
+
+
+<!-- podval sita -->
+<footer class="footer">
+<div class="container">
+  <div class="footer-block">
+    <img src="img/logo.svg" alt="logo" class="logo footer-logo">
+    <nav class="footer-nav">
+      <!-- 4 ssylki     a*4.footer-link -->
+    <a href="#" class="footer-link">Restaurants</a>
+    <a href="#" class="footer-link">Deliverer</a>
+    <a href="#" class="footer-link">Press-center</a>
+    <a href="#" class="footer-link">Contact</a>
+    </nav>
+    <div class="social-links">
+      <!-- sozdat 3 ssylki na logo soc setey a*3.social-link>img -->
+    <a href="#" class="social-link"><img src="img/instagram.svg" alt="instagram"></a>
+    <a href="#" class="social-link"><img src="img/fb.svg" alt="fb"></a>
+    <a href="#" class="social-link"><img src="img/vk.svg" alt="vk"></a>
+    </div>
+    <!-- /.social-links -->
+  </div>
+
+</footer>
+</body>
+</html> 

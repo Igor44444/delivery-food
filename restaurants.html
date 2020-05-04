@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanuki</title>
+  <!-- podklu4aem shrift iz google fonts copy "link"  -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" 
+  rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- podklu4aem animate css -->
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+ <div class="container">
+    <!-- Shapka site --> 
+  <header class="header">
+    <!-- Logotip -->
+    <a href="index.html"class="logo">
+      <img src="img/logo.svg" alt="Logo" class="logo">
+    </a>
+    <!-- Pole poiska -->
+    <input type="text" class="input input-address" placeholder="Delivery adress">
+    <!-- Knopki Join & Trash -->
+       <div class="buttons">
+          <!--  sozdaem button class="button primary"kopka sinego zveta,
+           zadaem stil dla Join iz design code i vsavlaem v #style.css --> 
+           <button class="button button-primary">
+           <!-- export kartinki c 4elove4kom(join) iz design v Delivery food , 
+           export ,svg,rename as user
+           img+tab 
+            prisvoim kartinke class="button-icon" 
+            i zadadim otstup v #style .button-icon -->
+           <img src="img/user.svg" alt="user"  class="button-icon" >
+           <!-- zavora4ivaem Join v span+tab i nazavom 
+            class="button-text" vnutri Join i pereydem v
+             #style .button-text{}-->
+        <span class="button-text">Join</span>
+         </button>
+      
+      <button class="button" id="cart-button">
+        <!-- sozdaem img.button-icon()korzina +tab vastavim kartinku(shopping)
+           iz papki img  img/   -->
+        <img src="img/shopping-card.svg" alt="shopping-card" class="button-icon">
+        <!-- dabavim span.button-text+tab  i vstavlyaem Trash-->
+         <span class="button-text">Trash</span>
+        </button>
+ </div>
+ <!-- CONTAINER finish -->
+</header>
+
+
+<main class="main">
+  <div class="container">
+    <!-- udalyaem <section class="promo">  -->
+
+       <!-- RESTAURANTS       section.restaurants+tab -->
+   <section class="restaurants">
+    <!-- .section-heading+tab -->
+     <div class="section-heading">  
+      <h2 class="section-title">Ugor</h2>
+      <div class="card-info">
+        <div class="rating"><IMG SRC="IMG/RATING.SVG" ALT="RATING" CLASS="RATING-STAR" /> 4.5</div>
+        <div class="price">from 90$</div>
+        <div class="category">pizza</div>
+        <!-- .card-info  -->
+        </div>
+      </div>
+      <!-- BLOCK C PHOTO RESTAURANTS     .cards|c + tab eta konstrucciya sozdaet class s ego commentariyem   -->
+     <div class="cards">
+     <div class="card  wow fadeInUp ">
+      <img src="img/image.jpg" alt="image" class="card-image">
+      <div class="card-text">
+        <div class="card-heading">
+          <h3 class="card-title card-title-reg">Ugor regular</h3>      
+        </div>
+        <!-- /.card-heading -->
+        <div class="card-info">
+          <div class="ingridients">Rice ugor unagi nori</div>
+        </div>
+        <!-- /.card-info -->
+        <div class="card-buttons">
+          <button class="button button-primary">
+            <span class="button-card-text">Trash</span>
+            <img 
+                 src="img/shoping-card-white.svg" 
+                 alt="shoping-card" 
+                 class="button-card-image">
+          </button>
+          <strong class="card-price-bold">50 $</strong>
+        </div>
+      </div>
+      <!-- /.card-text -->
+     </div>
+     <!-- /.card --> 
+     <!-- 2 KARTO4KA -->
+     <div class="card wow fadeInUp" data-wow-delay= "0.2s">
+      <!-- ubiraem skruglenie v design sverho pod osyami y h    
+       W (delaem "0")dlya togo 4toby vyrezat bez scrugleniya , menyat kartinki a skrugleniya ostavalis-->
+     <img src="img/imageTanuki.jpg" alt="image" class="card-image">
+     <div class="card-text">
+      <div class="card-heading">
+        <h3 class="card-title card-title-reg">California</h3>      
+      </div>
+      <!-- /.card-heading -->
+      <div class="card-info">
+        <div class="ingridients">Rice salmon cheese</div>
+      </div>
+      <!-- /.card-info -->
+      <div class="card-buttons">
+        <button class="button button-primary">
+          <span class="button-card-text">Trash</span>
+          <img 
+               src="img/shoping-card-white.svg" 
+               alt="shoping-card" 
+               class="button-card-image">
+        </button>
+        <strong class="card-price-bold">45 $</strong>
+      </div>
+    </div>
+    <!-- /.card-text -->
+    </div>
+    <!-- /.card --> 
+    <!-- 3 KARTO4KA -->
+    <div class="card wow fadeInUp" data-wow-delay= "0.4s">
+      <!-- ubiraem skruglenie v design sverho pod osyami y h    
+       W (delaem "0")dlya togo 4toby vyrezat bez scrugleniya , menyat kartinki a skrugleniya ostavalis-->
+     <img src="img/imageFoodband.jpg" alt="image" class="card-image">
+     <div class="card-text">
+      <div class="card-heading">
+        <h3 class="card-title card-title-reg">Okinava</h3>      
+      </div>
+      <!-- /.card-heading -->
+      <div class="card-info">
+        <div class="ingridients">Rice ugor unagi nori</div>
+      </div>
+      <!-- /.card-info -->
+      <div class="card-buttons">
+        <button class="button button-primary">
+          <span class="button-card-text">Trash</span>
+          <img 
+               src="img/shoping-card-white.svg" 
+               alt="shoping-card" 
+               class="button-card-image">
+        </button>
+        <strong class="card-price-bold">48 $</strong>
+      </div>
+    </div>
+    <!-- /.card-text -->
+    </div>
+    <!-- /.card --> 
+    <!-- 4444 KARTO4KA -->
+    <div class="card wow fadeInUp" data-wow-delay= "0.6s">
+      <!-- ubiraem skruglenie v design sverho pod osyami y h    
+       W (delaem "0")dlya togo 4toby vyrezat bez scrugleniya , menyat kartinki a skrugleniya ostavalis-->
+     <img src="img/imageGadina.jpg" alt="image" class="card-image">
+     <div class="card-text">
+      <div class="card-heading">
+        <h3 class="card-title card-title-reg">Cazar maki</h3>      
+      </div>
+      <!-- /.card-heading -->
+      <div class="card-info">
+        <div class="ingridients">Rice ugor unagi nori</div>
+      </div>
+      <!-- /.card-info -->
+      <div class="card-buttons">
+        <button class="button button-primary">
+          <span class="button-card-text">Trash</span>
+          <img 
+               src="img/shoping-card-white.svg" 
+               alt="shoping-card" 
+               class="button-card-image">
+        </button>
+        <strong class="card-price-bold">55 $</strong>
+      </div>
+    </div>
+    <!-- /.card-text -->
+    </div>
+    <!-- /.card --> 
+    <!-- 5 KARTO4KA -->
+    <div class="card wow fadeInUp" data-wow-delay= "0.8s">
+      <!-- ubiraem skruglenie v design sverho pod osyami y h    
+       W (delaem "0")dlya togo 4toby vyrezat bez scrugleniya , menyat kartinki a skrugleniya ostavalis-->
+     <img src="img/imageBase_of_food.jpg" alt="image" class="card-image">
+     <div class="card-text">
+      <div class="card-heading">
+        <h3 class="card-title card-title-reg">Yasay maki</h3>      
+      </div>
+      <!-- /.card-heading -->
+      <div class="card-info">
+        <div class="ingridients">Rice ugor unagi nori</div>
+      </div>
+      <!-- /.card-info -->
+      <div class="card-buttons">
+        <button class="button button-primary">
+          <span class="button-card-text">Trash</span>
+          <img 
+               src="img/shoping-card-white.svg" 
+               alt="shoping-card" 
+               class="button-card-image">
+        </button>
+        <strong class="card-price-bold">40 $</strong> 
+      </div>
+    </div>
+    <!-- /.card-text -->
+    </div>
+    <!-- /.card --> 
+    <!-- 6 KARTO4KA -->
+    <div class="card  wow fadeInUp" data-wow-delay= "1s">
+      <!-- ubiraem skruglenie v design sverho pod osyami y h    
+       W (delaem "0")dlya togo 4toby vyrezat bez scrugleniya , menyat kartinki a skrugleniya ostavalis-->
+     <img src="img/imagePizzaburger.jpg" alt="image" class="card-image">
+     <div class="card-text">
+      <div class="card-heading">
+        <h3 class="card-title card-title-reg">Roll with shrims</h3>      
+      </div>
+      <!-- /.card-heading -->
+      <div class="card-info">
+        <div class="ingridients">Rice shrims unagi nori</div>
+      </div>
+      <!-- /.card-info -->
+      <div class="card-buttons">
+        <button class="button button-primary">
+          <span class="button-card-text">Trash</span>
+          <img 
+               src="img/shoping-card-white.svg" 
+               alt="shoping-card" 
+               class="button-card-image">
+        </button>
+        <strong class="card-price-bold">55 $</strong>
+      </div>
+    </div>
+    <!-- /.card-text -->
+    </div>
+    <!-- /.card --> 
+  </div>
+    <!-- /.cards -->
+
+</section>
+  </div>
+  <!-- /.container -->
+</main>
+
+
+<!-- podval sita -->
+<footer class="footer">
+<div class="container">
+  <div class="footer-block">
+    <img src="img/logo.svg" alt="logo" class="logo footer-logo">
+    <nav class="footer-nav">
+      <!-- 4 ssylki     a*4.footer-link -->
+    <a href="#" class="footer-link">Restaurants</a>
+    <a href="#" class="footer-link">Deliverer</a>
+    <a href="#" class="footer-link">Press-center</a>
+    <a href="#" class="footer-link">Contact</a>
+    </nav>
+    <div class="social-links">
+      <!-- sozdat 3 ssylki na logo soc setey a*3.social-link>img -->
+    <a href="#" class="social-link"><img src="img/instagram.svg" alt="instagram"></a>
+    <a href="#" class="social-link"><img src="img/fb.svg" alt="fb"></a>
+    <a href="#" class="social-link"><img src="img/vk.svg" alt="vk"></a>
+    </div>
+    <!-- /.social-links -->
+  </div>
+
+</footer>
+
+<!-- sozdaem temnuyu podlogku dla korziny i propisyvau css  modal -->
+   <div class="modal">
+   <!-- Samo okno  -->
+     <div class="modal-dialog">
+       <div class="modal-header">
+         <h3 class="modal-title">Trash</h3>
+         <!-- &times; krestik -->
+         <button class="close">&times;</button>
+       </div>
+       <!-- /.modal-header --> 
+       <!-- stro4ki s zakazami ,   copy down shift+opt+down-->
+       <div class="modal-body">
+          <div class="food-row">
+           <span class="food-name">Roll ugor regular</span>
+           <strong class="food-price">45 $</strong>
+           <div class="food-counter">
+             <button class="counter-button">-</button>
+             <span class="counter">1</span>
+             <button class="counter-button">+</button>
+           </div>
+          </div>
+          <!-- /.food-row -->
+       <div class="modal-body">
+          <div class="food-row">
+           <span class="food-name">Roll ugor regular</span>
+           <strong class="food-price">45 $</strong>
+           <div class="food-counter">
+              <button class="counter-button">-</button>
+             <span class="counter">1</span>
+             <button class="counter-button">+</button>
+           </div>
+          </div>
+          <!-- /.food-row -->
+       <div class="modal-body">
+          <div class="food-row">
+           <span class="food-name">Roll ugor regular</span>
+           <strong class="food-price">45 $</strong>
+           <div class="food-counter">
+             <button class="counter-button">-</button>
+             <span class="counter">1</span>
+             <button class="counter-button">+</button>
+           </div>
+          </div>
+          <!-- /.food-row -->
+       <div class="modal-body">
+          <div class="food-row">
+           <span class="food-name">Roll ugor regular</span>
+           <strong class="food-price">45 $</strong>
+           <div class="food-counter">
+             <button class="counter-button">-</button>
+             <span class="counter">1</span>
+             <button class="counter-button">+</button>
+           </div>
+          </div>
+          <!-- /.food-row -->
+       <div class="modal-body">
+          <div class="food-row">
+           <span class="food-name">Roll ugor regular</span>
+           <strong class="food-price">45 $</strong>
+           <div class="food-counter">
+             <button class="counter-button">-</button>
+             <span class="counter">1</span>
+             <button class="counter-button">+</button>
+           </div>
+          </div>
+          <!-- /.food-row -->
+       <div class="modal-body">
+          <div class="food-row">
+           <span class="food-name">Roll ugor regular</span>
+           <strong class="food-price">45 $</strong>
+           <div class="food-counter">
+             <button class="counter-button">-</button>
+             <span class="counter">1</span>
+             <button class="counter-button">+</button>
+           </div>
+          </div>
+          <!-- /.food-row -->
+       <div class="modal-body">
+          <div class="food-row">
+           <span class="food-name">Roll ugor regular</span>
+           <strong class="food-price">45 $</strong>
+           <div class="food-counter">
+             <button class="counter-button">-</button>
+             <span class="counter">1</span>
+             <button class="counter-button">+</button>
+           </div>
+          </div>
+          <!-- /.food-row -->
+
+       </div>
+       <!-- /.modal-body -->
+     </div>
+     <!-- podval okna zakaza -->
+     <div class="modal-footer">
+       <span class="modal-pricetag">50 $</span>
+       <div class="footer-buttons">
+         <!-- button-primary 4toby stala sinim zvetom -->
+          <button class="button button-primary">Proceed to checkout </button> 
+          <button class="button">Cancel</button> 
+       </div>
+     </div>
+     <!-- /.modal-footer -->
+     <!-- /.modal-dialog -->
+  </div>
+  <script src="js/wow.min.js"></script>
+  <!-- podklu4aem js script dla raboty s otkratiem i zakrytiem korziny  script src=""-->
+  <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,539 @@
+/* pravilnoe vys4ityvanie rasmerov elementov */
+* {
+  box-sizing: border-box;
+}
+/*soedinyaem shrift google "font-family: 'Roboto', sans-serif;" ho4u ispolzovat 
+roboto dla vseh textov na sait i alternativa sans-serif */
+body {
+  font-family: "Roboto", sans-serif;
+  margin-top: 44px;
+}
+.container {
+  max-width: 1200px;
+  /* OBVODKA POSEREDINE */
+  margin: auto;
+}
+.header {
+  /* elementy vystroilis v odnu stroku */
+  display: flex;
+  /* logotip po centru otnositelno vsego*/
+  align-items: center;
+  /* content po storanam */
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+/* sozdaem obshiy class 4toby ne dublirovat same parametry i copy pohogie parametry */
+.input {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 35px;
+  /* bgr+tab */
+  background-repeat: no-repeat;
+  /* home ot'edet sleva na 11px kak na design progect    bgp + tab */
+  background-position: left 11px center;
+}
+/* pole poiska(click design polya,sleva master/input,master plate,
+  Plate nagimae,sprava code,kopiruem code ot slova background v search-input */
+.input-address {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  /* skruglenie po krayam okna */
+
+  border-radius: 2px;
+  /* Otstup */
+  padding: 8px;
+  /* zanimaet 80% ot svobodnogo mesta */
+  flex: 0.8;
+  /*razmer shrifta 16px  vnutri polya +vysota stroki 24px  */
+  font-size: 16px;
+  line-height: 24px;
+  /*  vyiti iz papki css tak kak logo dom v img comandoy   ../* / */
+  background-image: url(../img/home.svg);
+  background-repeat: no-repeat;
+  background-position: left 11px center;
+  /* otstup sleva do nadpisi Delivery + razmer domika  pl30px+tab */
+  padding-left: 35px;
+}
+.input-search {
+  background-image: url(../img/search.svg);
+  width: 300px;
+  /* delaem eto dlya 2 stranicy  */
+  margin-left: auto;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+}
+/* knopki   pishem otstupy vnutri   pl(r)16px+tab 
+padding-left: 16px;
+padding-right: 16px;
+mogno koro4e p8(sverchu)-16(po krayam) */
+.button {
+  /* df+tab vyravnivaem , aic+ tab align-items */
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  /* sozdaem obvodku> design code ot background do boardeder-r..2px 
+copy v vnutr button  */
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+  border-radius: 2px;
+  /* zvet bukv v knopke berem iz design + razmer shrifta i vysota stroki*/
+  color: #595959;
+  font-size: 16px;
+  line-height: 24px;
+}
+/*  berem iz design zvet Join + dobavim obvodku iz drugoy knopki 
++pomenyaem zifry na sisniye 
+zvet bukv belyy */
+.button-primary {
+  background-color: #1890ff;
+  border: 1px solid #1890ff;
+  color: #fff;
+  margin-right: 10px;
+}
+/* otodvinem ot kartinki text na 6px    mr6p+tab  
+vyrovnat po vertikali vam+tab  */
+.button-icon {
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.button-card-text{
+  margin-right: 10px;
+}
+/* vam+tab */
+.button-text {
+  vertical-align: middle;
+}
+.promo {
+  /*   */
+  box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+  /* berem png kartinku delaem ee polnoi i exportiruem v img zatem dobavlaem suda */
+  background: #fff1b8 url(../img/promo-image.png) no-repeat top -50px right -100px/500px;
+  border-radius: 10px;
+  padding: 68px 70px;
+  /* otstup snizu - otodvigaem restaurants na 56px* mb56px+tab*/
+  margin-bottom: 56px;
+}
+.promo-title {
+  /* berem iz design  */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 39px;
+  line-height: 46px;
+  color: #302c34;
+}
+.promo-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #302c34;
+  max-width: 600px;
+}
+.main {
+  background: linear-gradient(
+    180deg,
+    rgba(245, 245, 245, 0) 1.04%,
+    #f5f5f5 100%
+  );
+}
+.section-heading {
+  display: flex;
+  align-content: center;
+  /* ubiraem justify... 4toby v restaurant stranice rating price enc sdvinulis vlevo */
+  /* justify-content: space-between; */
+  margin-bottom: 44px;
+}
+.section-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+  /* otklu4aem lishniye otstupy mg0+tab*/
+  margin: 0;
+  margin-right: 30px;
+}
+.cards {
+  display: flex;
+  /* esli ne pomeshautsya 4toby perenosilis  */
+  flex-wrap: wrap;
+  /* otdelit kartinki drug ot druga jcsb+tab */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+/* design carto4ki pizza plus */
+.card {
+  /* berem iz designa */
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  /* skrugleniye */
+  border-radius: 7px;
+  /* 4toby zarabotalo skrugleniye nodo  
+overflow: hidden skryvaet vsye 4to za predelami karto4ki */
+  overflow: hidden;
+  /* otodvigaem niz  */
+  margin-bottom: 30px;
+  /* 4toby karto4ki pri umenshenii ostavalis  po 3 v ryad */
+  flex-basis: 31%;
+  /* 4toby ne bylo pod4erkivaniya */
+  text-decoration: none;
+}
+.card-image {
+  width: 384px;
+  height: 250px;
+  /* 4toby kartinka delalas pod nashi razmery */
+  object-fit: cover;
+}
+.card-text {
+  /* pt20+tab otstup sverhu */
+  padding-top: 20px;
+  padding-bottom: 35px;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+.card-heading {
+  /* 4toby pizza Plus i 50 min stali gorizont */
+  display: flex;
+  align-items: center;
+  /* otnositelno drug druga raskidyvautsya */
+  justify-content: space-between;
+}
+.card-title {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+/* pishem dla 2 stranicy  */
+.card-title-reg{
+  font-weight: 400;
+}
+.card-tag {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+  background: #262626;
+  border-radius: 2px;
+  padding: 1px 8px;
+}
+.card-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+} 
+.card-buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+.card-price-bold{
+  font-weight: bold;
+  font-size: 20px; 
+  line-height: 32px;
+  margin-left: 30px;
+}
+.rating {
+  /* otstuo ratinga ot price */
+  flex-basis: 100%;
+  margin-right: 26px;
+  color: #ffc107;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+}
+.price,
+.category {
+  font-size: 18px;
+  line-height: 32px;
+  color: #8c8c8c;
+}
+.price {
+  margin-right: 10px;
+}
+.ingridients{
+  font-size: 18px;
+  line-height: 21px;
+  color: #8c8c8c;
+}
+/* 4to budet bukvalno za pricom  girnaya to4ka*/
+.price::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #8c8c8c;
+  /* sdelat stro4no blo4nym di+tab */
+  display: inline-block;
+  vertical-align: middle;
+  /* skrugleniye brs50+tab 4toby stalo to4koy*/
+  border-radius: 50px;
+  margin-left: 10px;
+}
+.footer {
+  /* sverhu i snizu ot logo 60 a sleva i sprava 0 */
+  padding-left: 60px 0;
+}
+.footer-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-nav {
+  margin-left: 35px;
+  margin-right: auto;
+}
+.footer-link {
+  display: inline-block;
+  color: #595959;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  /* ubiraem nignee pod4erkivanie  tdn+tab */
+  text-decoration: none;
+}
+.footer-link:not(:last-child) {
+  /* last-child eto vk i posle nego nam ne nado otstupa */
+  margin-right: 15px;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+}
+.social-link:not(:last-child) {
+  margin-right: 21px;
+}
+/* KORZINA ZAKAZA 2 oy shag FON  */
+.modal{
+  /* vsegda na ekrane -ne prokru4ivalas */
+  position: fixed;
+  /* prikleivayu k top left ugol */
+  left: 0;
+  top: 0;
+  /* rastyagivau na  ..ot tega body*/
+ width: 100%;
+  height: 100%;  
+  /* beru cvet fona iz design */
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+
+}
+/* dla togo 4toby okno zakaza bylo zakryto  */
+.is-open{
+display: flex;
+}
+/* OKNO Korzina */
+.modal-dialog{
+  /* korrektiruu width na max-width=780 a oby4naya width=95%
+  eto zna4it okno budet 95% no ne bolshe 780px */
+  max-width: 780px;
+  width:95%;
+  /* delayu min-height iz prosto height 4toby esli 
+  kontenta bolshe to ni4ego ne budet vyvalivatsya */
+ min-height: 552px;
+ background: #FFFFFF;
+ border-radius: 5px;
+ margin: auto;
+ /* otstup sverhu snizu i sleva */
+ padding: 40px 45px;
+}
+.modal-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.modal-title{
+  margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+/* knopka zakrytiya krestik */
+.close{
+  font-size: 36px;
+  border: none;
+  /* fon prozra4nyy */
+  background-color: transparent;
+}
+.modal-body{
+  margin-bottom: 53px;
+}
+.food-row{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  /* pishem pro seruyu polosku snizu */
+  padding-bottom: 8px;
+  border-bottom: 1px solid #D9D9D9;
+  /* megdu strokami 15 px */
+  margin-bottom: 15px;
+}
+.food-name{
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+}
+.food-price{
+  /* sleva prigmem v pravuyu 4ast */
+margin-left: auto;
+margin-right: 47px;
+font-weight: bold;
+}
+.food-counter{
+  display: flex;
+  align-items: center;
+}
+.counter-button{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  width: 39px;
+  height: 32px;
+  background: #FFFFFF;
+  border: 1px solid #40A9FF;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #40A9FF;
+}
+/* koli4estvo megdu - i + */
+.counter{
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.modal-footer{
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-buttons{
+  display: flex;
+  align-items: center;
+}
+.modal-pricetag{
+  background: #262626;
+  border-radius: 5px; 
+  color: #ffffff;
+  padding: 15px 20px;
+  font-size: 20px;
+  line-height: 23px;
+}
+/* ADAPTIVNAYA VERSTKA */
+/* dlya adoptacii ekrana dla raznyh ustroystv   @media(max-width:1200px){ */
+
+@media (max-width: 1366px) {
+   .container {
+    max-width: 960px;
+   }
+   .promo {
+    background-size: 420px;
+    background-position: center right-300;
+   }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .promo {
+    padding: 50px;
+    background-size: 500px;
+    background-position: center right -280px;
+  }
+  .promo-text {
+    font-size: 16px;
+    max-width: 400px;
+  }
+  /* delaem po 2 karto4ki v stroku */
+  .card {
+    flex-basis: 49%;
+  }
+  .footer-link {
+    font-size: 16px;
+  }
+}
+@media (max-width: 650px) {
+  .container {
+    max-width: 560px;
+  }
+  .card-info {
+    /* vozmognost perenos info na druguu stroku  */
+    flex-wrap: wrap;
+  }
+  /* rating zanimaet vsu stroku */
+  .card.rating {
+    flex-basis: 100%;
+  }
+  .card-title {
+    font-size: 18px;
+  }
+  .promo {
+    background-size: 400px;
+    background-position: bottom 50px right -250px;
+  }
+  .promo-title {
+    font-size: 24px;
+    /* vysota stroki */
+    line-height: 1.4;
+  }
+  .promo-text {
+    margin-top: 0;
+  }
+  /*  */
+  .header {
+    flex-wrap: wrap;
+  }
+  .input-address {
+    /* 4toby stroka adresa dost stala 5 po s4etu i ushla vniz */
+    order: 5;
+    margin-top: 15px;
+    /* 4toby byl na vsu stroku */
+    flex: 1;
+  }
+  .section-title {
+    font-size: 30px;
+  }
+
+  .card {
+    /* odna card na stroku */
+    flex-basis: 100%;
+  }
+  .card-image {
+    width: 100%;
+  }
+  .footer {
+    padding: 30px;
+  }
+  .footer-block {
+    /* vyrovnat vsy sna4ala */
+    align-items: flex-start;
+  }
+  .footer-nav {
+    order: 0;
+    margin-left: 0;
+    /* dla togo 4toby postavit v stolbik  */
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-logo {
+    margin-right: 15px;
+    order: 1;
+  }
+  .social-links {
+    order: 2;
+  }
+}
